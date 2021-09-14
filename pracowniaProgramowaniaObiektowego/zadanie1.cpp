@@ -41,6 +41,7 @@ class Rectangle{
 	float Rectangle::showResults(){
 		calculateCircumference();
 		calculateArea();
+		cout<<"dlugosci boków wynoszą: "<<lenghtA<<" "<<lenghtB<<endl;
 		cout<<"pole wynosi: "<<area<<endl;
 		cout<<"obwod wynosi: "<<circumference<<endl;
 	}
