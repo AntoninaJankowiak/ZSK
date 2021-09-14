@@ -1,32 +1,53 @@
 #include<iostream>
-
+#include<locale.h>
 using namespace std;
 
-
- class Worker{
- 	public:
-	/*deklaracja zmiennej cz≈Çonkowieskiej*/
+class Worker{
+	public:
 	string name;
 	string surname;
-	unsigned short int age;
-	
-//definicja funkcji cz≈Çonkowskiej
+	string nationality;
+	unsigned short int yearBirthday;
+	char gender;
+	float height;
+	//definicja funkcji cz≥onkowskiej
 	void showName(){
-		cout<<"twoje imie:  "<<name<<endl;
-	}
-	
-}; 
+		cout<<"Twoje imiÍ to: "<<name;
+		
+	} 
+	//deklaracja (prototyp) metody
+	void showSurname();
+	void showPersonality();
+	void showAllData();
+};
+//definicja metody showSurname
+void Worker::showSurname(){
+	cout<<"Nazwisko: "<<surname;
+}
+
+void Worker::showPersonality(){
+	cout<<"ImiÍ i nazwisko: "<<name<<" "<<surname<<endl;
+}
+void Worker::showAllData(){
+	cout<<"Dane Pracownika \n";
+	showPersonality();
+	cout<<"NarodowoúÊ: "<<nationality<<"\n"<<"Data urodzenia: "<<yearBirthday<<" r, wzrost: "<<height<<" cm "<<endl;
+}
+
+
+
 
 int main(){
-	setlocale(LC_CTYPE, "Polish");
-	 Worker pracownik;
-	 
-	 pracownik.surname="Nowak";
-	 
-	 pracownik.showName();
-	// cout<<pracownik.surname;	 
-	 pracownik.age=16;
-	 cout<<"wiek: "<<pracownik.age<<endl;
-	 
+	setlocale(LC_CTYPE, "polish");
+	Worker pracownik;
+	pracownik.name="Janusz";
+	pracownik.surname="Kowalski";
+	pracownik.nationality="polish";
+	pracownik.yearBirthday=2000;
+	pracownik.gender='M';
+	pracownik.height=180;
+	//pracownik.showName();
+	pracownik.showPersonality();
+	pracownik.showAllData();
 	return 0;
 }
