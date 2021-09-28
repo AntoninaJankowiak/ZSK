@@ -21,6 +21,10 @@ int main(){
 	
 	cout<<"Imiê i nazwisko: "<<kowalski.name<<" "<<kowalski.surname
 	<<"\nIdentyfikator: "<<kowalski.id<<"\nData urodzenia: "<<kowalski.dateBirthday.dd<<"-"<<kowalski.dateBirthday.mm
-	<<"-"<<kowalski.dateBirthday.rrrr;
+	<<"-"<<kowalski.dateBirthday.rrrr<<endl;
+	
+	for(int unsigned i=0; i<5; i++){
+		cout<<i+1<<" ocena : "<<kowalski.gradeInformatics[i]<<"\n";
+	}
 	return 0;
 }
