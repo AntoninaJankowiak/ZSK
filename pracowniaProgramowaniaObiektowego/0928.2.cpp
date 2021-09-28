@@ -20,7 +20,7 @@ class Worker{
 
 void Worker::showAllData(){
 	cout<<"Dane pracownika:\nIdentyfikator pracownika: "
-	<<id<<"\nImiê i nazwisko "<<name<<" "<<surname
+	<<id<<"\nImiÃª i nazwisko "<<name<<" "<<surname
 	<<"\nData urodzenia: "<<dateBirthday.dd<<"."<<dateBirthday.mm<<"."
 	<<dateBirthday.yyyy<<endl;
 		
