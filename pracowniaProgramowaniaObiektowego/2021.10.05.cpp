@@ -42,7 +42,7 @@ int main(){
 	School kowal;
 	kowal.setNameSurname("janusz","kowal");
 	kowal.getData();
-	School::s_jobPosition="wyk³adowca";
+	School::s_jobPosition="wykÂ³adowca";
 	cout<<"stanowisko "<<School::s_jobPosition;
 	
 	kowal.s_jobPosition="dziekan";
