@@ -1,0 +1,53 @@
+#include<iostream>
+
+using namespace std;
+
+class Rectangle {
+    private:
+        double sideA, sideB;
+        string color;
+    public:
+        Rectangle();
+        Rectangle(double pSideA, double pSideB);
+
+        void setColor(string pColor);
+        void getData();
+
+};
+
+Rectangle::Rectangle() {
+    cout<<"konstruktor domyślny\n";
+    setColor("agua");
+}
+
+Rectangle::Rectangle(double pSideA, double pSideB) {
+    cout<<"\nkonstruktor parametryczny"<<endl;
+    sideA=pSideA;
+    sideB=pSideB;
+    setColor("agua");
+}
+
+void Rectangle::setColor(string pColor) {
+    color=pColor;
+}
+
+void Rectangle::getData() {
+    cout<<"\nbok a: "<<sideA<<"\nbok b: "<<sideB<<"\nkolor: "<<color;
+}
+
+
+int main(){
+    setlocale(LC_CTYPE,"polish");
+
+   Rectangle p1;
+   p1.getData();
+   Rectangle p2(2,4);
+   p2.getData();
+
+   p1.setColor("black");
+   p1.getData();
+
+
+
+   return 0;
+}
