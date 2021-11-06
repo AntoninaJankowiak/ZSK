@@ -10,9 +10,9 @@ class Worker{
 	unsigned short int yearBirthday;
 	char gender;
 	float height;
-	//definicja funkcji cz³onkowskiej
+	//definicja funkcji czÂ³onkowskiej
 	void showName(){
-		cout<<"Twoje imiê to: "<<name;
+		cout<<"Twoje imiÃª to: "<<name;
 		
 	} 
 	//deklaracja (prototyp) metody
@@ -26,12 +26,12 @@ void Worker::showSurname(){
 }
 
 void Worker::showPersonality(){
-	cout<<"Imiê i nazwisko: "<<name<<" "<<surname<<endl;
+	cout<<"ImiÃª i nazwisko: "<<name<<" "<<surname<<endl;
 }
 void Worker::showAllData(){
 	cout<<"Dane Pracownika \n";
 	showPersonality();
-	cout<<"Narodowoœæ: "<<nationality<<"\n"<<"Data urodzenia: "<<yearBirthday<<" r, wzrost: "<<height<<" cm "<<endl;
+	cout<<"NarodowoÅ“Ã¦: "<<nationality<<"\n"<<"Data urodzenia: "<<yearBirthday<<" r, wzrost: "<<height<<" cm "<<endl;
 }
 
 
