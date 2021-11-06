@@ -21,7 +21,7 @@ void Worker::getData(){
 }
 Worker::Worker():
 	id{-1},
-	name{"IMIÊ DOMYŒLNE"},
+	name{"IMIÃŠ DOMYÅ’LNE"},
 	surname{"NAZWISKO DOMYSLNE"}
 {
 	cout<<"KONSTRUKTOR domyslny"<<endl;
